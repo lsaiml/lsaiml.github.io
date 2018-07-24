@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+  }
+
+  h1 {
+    font-weight:300;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+  <head>
+    <title>Deep Cross Modal Learning for Caricature Verification and Identification (CaVINet)</title>
+  </head>
+
+  <body>
+        <br>
+        <center><span style="font-size:44px;font-weight:bold;">Deep Cross Modal Learning for Caricature Verification and Identification (CaVINet)</span></center><br/>
+        <table align=center width=800px>
+          <tr>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="#">Jatin Garg*</a></span></center></td>
+            <td align=center width=200px>
+            <center><span style="font-size:22px"><a href="https://pvskand.github.io/" target="_blank">Skand Vishwanath Peri*</a></span></center></td>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="#">Himanshu Tolani*</a></span></center></td>
+          <tr/>
+         </table>
+         <table align=center width=800px>
+          <tr>
+            <td align=center width=150px>
+            <center><span style="font-size:22px"><a href="http://cse.iitrpr.ac.in/ckn/index.html" target="_blank">Narayanan.C.Krishnan</a></span></center></td>
+          <tr/>
+         </table>
+        <table align=center width=600px style="padding-top:0px;padding-bottom:20px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:22px">Indian Institute of Technology, Ropar, India</span></center></td>
+          <tr/>
+          <tr>
+            <td align=center width=600px><center><span style="font-size:16px">* equal contribution</span></center></td>
+          <tr/>
+          <tr>
+            <td align=center width=600px><center><span style="font-size:22px">In <a href="http://acmmm.org/2018">ACM Multimedia, 2018 </a></span></center></td>
+          <tr/>
+        </table>
+        <!-- <table align=center width=600px>
+          <tr>
+            <td align=center width=650px>
+            <center><span style="font-size:22px"><a href="https://openreview.net/forum?id=BkisuzWRW" target="_blank">ICLR 2018 (Oral)</a></span></center></td>
+          <tr/>
+        </table> -->
+        <table align=center width=700px>
+          <tr>
+            <td align=center width=200px><center><span style="font-size:22px"><a href="#">[Download Paper]</a></span></center></td>
+            <td align=center width=200px><center><span style="font-size:22px"><a href='https://github.com/lsaiml/CaVINet' target="_blank">[Github Code]</a></span></center></td>
+            <!-- <td align=center width=200px><center><span style="font-size:22px"><a href='https://www.dropbox.com/s/36efg1t3qn6i495/2018_04_ZeroShotImitation.pptx'>[Talk Slides]</a></span></center></td> -->
+          <tr/>
+        </table><br/>
+
+        <table align=center width=1000px>
+          <tr><td width=1000px>
+            <center><a href="resources/teaser.jpg" style="margin-right:30px"><img src = "resources/dataset.jpg" height="400px"></img></a></center>
+          </td></tr>
+        </table>
+
+        <br>
+
+        <div style="width:800px; margin:0 auto; text-align=center">
+Learning from different modalities is a challenging task that involves determining a shared space that bridges the two modalities. In this paper, we look at the challenging problem of cross modal face verification and recognition between caricature and visual image modalities. Caricature is a modality with images having exaggerations of facial features of a person. Due to the significant variations in the caricatures, building vision models for recognizing and verifying data from this modality is an extremely challenging task. Visual images with significantly lesser amount of distortions can act as a bridge for the analysis of caricature modality. To advance the research in this field, we have created a publicly available large Caricature-VIsual dataset [CaVI] with images from both the modalities. The dataset captures the rich variations in the caricature of an identity. This paper presents the first cross modal architecture that is able to handle extreme distortions present in caricatures using a deep learning network that learns similar representations across the modalities. We use two convolutional networks along with transformations that are subjected to orthogonality constraints to capture the shared and modality specific representations. In contrast to prior research, our approach neither depends on manually extracted facial landmarks for learning the representations, nor on the identities of the person for performing verification. The learned shared representation achieves 91% accuracy for verifying unseen images and 75% accuracy on unseen identities. Further, recognizing the identity in the image by knowledge transfer using a combination of shared and modality specific representations, resulted in an unprecedented performance of 85% rank-1 accuracy for caricatures and 95% rank-1 accuracy for visual images.
+      </div>
+      <br>
+      <br>
+      <hr>
+
+        <center id="sourceCode"><h1>CaVI Dataset</h1></center>
+        <div style="width:800px; margin:0 auto; text-align=center">
+        <center>We will release our CaVI Dataset here. Please stay tuned.</center>
+
+        </div>
+        <table align=center width=900px>
+        <tr>
+          <!-- <p style="margin-top:4px;"></p> -->
+          <td width=300px align=center>
+            <span style="font-size:28px"><a href='#'>[Link To Dataset]</a></span>
+          </td>
+        </tr>
+        </table>
+
+      <br>
+      <hr>
+
+        <center id="sourceCode"><h1><i>CaVINet</i> Architecture</h1></center>
+        <center>A brief summary of our approach is shown below.</center>
+        <table align=center width=1000px>
+          <p style="margin-top:4px;"></p>
+          <tr><td width=1000px>
+            <center><a href="resources/final_complete_archi.png"><img src = "resources/final_complete_archi.png" height="320px"></img></a><br></center>
+          </td></tr>
+        </table>
+        <br/>
+
+      <br>
+      <hr>
+
+        <table align=center width=850px>
+          <center><h1>Paper and Bibtex</h1></center>
+          <tr>
+          <td width=250px align=left>
+          <!-- <p style="margin-top:4px;"></p> -->
+          <a href="#"><img style="height:150px" src="resources/acmmm18_thumbnail.png"/></a>
+          <center>
+          <span style="font-size:20pt"><a href="#">[Paper]</a>&nbsp;
+          <span style="font-size:20pt"><a href="#">[ArXiv]</a>
+          <!-- <span style="font-size:20pt"><a href="https://www.dropbox.com/s/36efg1t3qn6i495/2018_04_ZeroShotImitation.pptx">[Slides]</a> -->
+          </center>
+          </td>
+          <td width=50px align=center>
+          </td>
+          <td width=550px align=left>
+          <!-- <p style="margin-top:4px;"></p> -->
+          <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Jatin Garg*, Skand Vishwanath Peri*, Himanshu Tolani*, Narayanan.C.Krishnan<br>Deep Cross Modal Learning for Caricature Verification and Identification (CaVINet)<br/></b> In <i>Proceesings of the 2018 ACM Multimedia.</i>.</span></p>
+          <!-- <p style="margin-top:20px;"></p> -->
+          <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('acmmm18_bib')" class="togglebib">[Bibtex]</a></span>
+          </td>
+          </tr>
+          <tr>
+          <td width=250px align=left>
+          </td>
+          <td width=50px align=center>
+          </td>
+          <td width=550px align=left>
+            <div class="paper" id="acmmm18_bib">
+<pre xml:space="preserve">
+  @inproceedings{CaVInetACMMM18,
+      Author = {Garg, Jatin and
+      Peri, Skand Vishwanath and Tolani, Himanshu and
+      Krishna, Narayanan.C },
+      Title = {Deep Cross Modal Learning for Caricature Verification and Identification (CaVINet)},
+      Booktitle = {Proceedings of the 2018 ACM Conference on Multimedia},
+      Year = {2018},
+      publisher = {ACM}
+  }</pre>
+            </div>
+            </td>
+            </tr>
+        </table>
+
+      <br>
+      <hr>
+
+
+      <table align=center width=800px>
+        <tr><td width=800px><left>
+        <center><h1>Acknowledgements</h1></center>
+        <center> The authors gratefully acknowledge NVIDIA for the hardware grant. This research is supported by the Department of Science and Technology, India under grant YSS/2015/001206 </center>
+	</left></td></tr>
+      </table>
+    <br><br>
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+
+<p align="right">
+         <font size="2">Template : <a href="https://pathak22.github.io/seg-by-interaction/">this</a></font>
+</p>
+</body>
+</html>
